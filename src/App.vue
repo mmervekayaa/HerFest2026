@@ -4,7 +4,7 @@
   <div class="loader">
     <img src="@/assets/herfest_logo.png" alt="HER'FEST" class="logo-animation temp-logo" style="max-width: 350px; margin-bottom: 20px;" />
     <div class="loading-text" style="display: none;">HER'FEST 2026</div>
-    <div class="loading-subtitle">BUGÜNÜN VİZYONU, YARININ TEKNOLOJİSİ</div>
+    <div class="loading-subtitle">GELECEĞİ ŞEKİLLENDİREN KADINLAR</div>
   </div>
 </div>
 <div v-else>
