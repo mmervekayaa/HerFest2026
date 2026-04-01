@@ -2,18 +2,7 @@
   <div class="partners-page">
     <div class="container">
       <h2 class="section-title">PAYDAŞLAR</h2>
-      <p class="section-subtitle">Teknoloji ve İnovasyonun Güçlü İş Ortakları</p>
       <div class="partners-grid">
-        <div class="partner-card">
-          <img src="@/assets/GSB.png" alt="gsb" />
-          <h3>Gençlik ve Spor Bakanlığı</h3>
-          <p>Ana Paydaş</p>
-        </div>
-        <div class="partner-card">
-          <img src="@/assets/UNIDES.png" alt="Dias Curiosity" />
-          <h3>ÜNİDES</h3>
-          <p>Ana Paydaş</p>
-        </div>
         <div class="partner-card">
           <img src="@/assets/firat.png" alt="Fırat Üniversitesi" />
           <h3>Fırat Üniversitesi</h3>
@@ -29,31 +18,6 @@
           <h3>Huawei Student Developers Fırat</h3>
           <p>Organizatör</p>
         </div>
-        <div class="partner-card">
-          <img src="@/assets/dogus.png" alt="Doğuş" />
-          <h3>Doğuş Group</h3>
-          <p>Platin Paydaş</p>
-        </div>
-        <div class="partner-card">
-          <img src="@/assets/dias.png" alt="Dias Technology" />
-          <h3>Dias Technology</h3>
-          <p>Platin Paydaş</p>
-        </div>
-        <div class="partner-card">
-          <img src="@/assets/curiosity-logo.jpeg" alt="Curiosity" />
-          <h3>Curiosity Technology</h3>
-          <p>Platin Paydaş</p>
-        </div>
-        <div class="partner-card">
-          <img src="@/assets/turk-telekom.png" alt="Türk Telekom" />
-          <h3>Türk Telekom</h3>
-          <p>Platin Paydaş</p>
-        </div>
-        <div class="partner-card">
-          <img src="@/assets/TURKCELL.png" alt="Turkcell" />
-          <h3>Turkcell</h3>
-          <p>Platin Paydaş</p>
-        </div>
       </div>
 
       <h2 class="section-title supporters-title">DESTEKÇİLERİMİZ</h2>
@@ -63,7 +27,7 @@
           <div class="special-badge">
             <img src="@/assets/kupa.png" alt="Altın Kupa" class="badge-icon" />
           </div>
-          <img src="@/assets/fry_stop.png" alt="Fry Stop" style="background: #c026d3; border-radius: 15px; padding: 15px;" />
+          <img src="@/assets/fry_stop_yeni.jpg" alt="Fry Stop" />
           <h3>Fry Stop</h3>
           <p>Ana Sponsor</p>
         </div>
@@ -75,23 +39,19 @@
           <h3>Luuq</h3>
           <p>Ana Sponsor</p>
         </div>
+
         <div class="partner-card">
-          <div style="font-size: 3.5rem; color: #94a3b8; margin-bottom: 20px;"><i class="fas fa-medal"></i></div>
-          <h3>Alpay Akyıldız</h3>
-          <p>Gümüş Sponsor</p>
-        </div>
-        <div class="partner-card">
-          <div style="font-size: 3.5rem; color: #cd7f32; margin-bottom: 20px;"><i class="fas fa-medal"></i></div>
+          <img src="@/assets/elazig_etkinlik.png" alt="Elazığ Etkinlik Günleri" style="mix-blend-mode: multiply; transform: scale(1.1);" />
           <h3>Elazığ Etkinlik Günleri</h3>
           <p>Bronz Sponsor</p>
         </div>
         <div class="partner-card">
-          <div style="font-size: 3.5rem; color: #c026d3; margin-bottom: 20px;"><i class="fas fa-handshake"></i></div>
+          <img src="@/assets/mackbear_yeni.png" alt="Mackbear" style="mix-blend-mode: multiply; transform: scale(1.1);" />
           <h3>Mackbear</h3>
           <p>Destekçi</p>
         </div>
         <div class="partner-card">
-          <div style="font-size: 3.5rem; color: #c026d3; margin-bottom: 20px;"><i class="fas fa-handshake"></i></div>
+          <img src="@/assets/dogukan_emlak_yeni.png" alt="Doğukan Emlak" style="mix-blend-mode: multiply; transform: scale(1.1);" />
           <h3>Doğukan Emlak</h3>
           <p>Destekçi</p>
         </div>
@@ -110,7 +70,6 @@ export default {
 <style scoped>
 .partners-page {
   padding: 80px 0;
-  /* background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); Arka plan kaldırıldı */
 }
 
 .container {
@@ -278,7 +237,6 @@ h2::after {
   position: absolute;
   top: -45px;
   right: -45px;
-  /* background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%); */
   padding: 0;
   border-radius: 50%;
   box-shadow: none;
@@ -297,7 +255,6 @@ h2::after {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  /* transform: scale(0.4); */
 }
 
 @media (max-width: 768px) {
@@ -343,4 +300,4 @@ h2::after {
     right: -30px;
   }
 }
-</style> 
+</style>
