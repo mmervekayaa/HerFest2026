@@ -27,7 +27,7 @@
           </div>
         </div>
         <div class="cta-section">
-          <p class="cta-text">Geleceğin Teknolojilerini Keşfetmeye Hazır mısınız?</p>
+          <p class="cta-text">Teknolojide Kadın Gücüne Şahitlik Etmeye Hazır mısınız?</p>
           <div class="cta-spacer"></div>
           <div class="cta-row">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJ7aM9IvqlaWf12JWSjh5Hx-56Lgc81hGjkkAXjIEo0kzjfg/viewform" class="cta-button" target="_blank">ÜYE KAYIT FORMU</a>
