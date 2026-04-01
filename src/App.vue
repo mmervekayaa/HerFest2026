@@ -8,26 +8,61 @@
   </div>
 </div>
 <div v-else>
-  <nav class="navbar" :class="{ 'scrolled': isScrolled }">
+  <nav class="navbar" :class="{ 'scrolled': isScrolled || isMobileMenuOpen }">
     <div class="container">
       <div class="logo">
         <a href="#home" @click.prevent="scrollToSection('home')" style="text-decoration: none;">
-          <img src="@/assets/herfest_logo.png" alt="HER'FEST" class="nav-temp-logo" :style="{ filter: isScrolled ? 'none' : 'brightness(10)' }" style="max-height: 80px; margin: 0;" />
+          <img src="@/assets/herfest_logo.png" alt="HER'FEST" class="nav-temp-logo" :style="{ filter: isScrolled || isMobileMenuOpen ? 'none' : 'brightness(10)' }" />
         </a>
       </div>
-      <div class="nav-links" :class="{ active: isMobileMenuOpen }">
+      
+      <!-- Desktop Navigation Only -->
+      <div class="nav-links desktop-only">
         <a href="#home" class="nav-link" @click.prevent="scrollToSection('home')" :class="{ active: currentSection === 'home' }">Ana Sayfa</a>
         <a href="#about" class="nav-link" @click.prevent="scrollToSection('about')" :class="{ active: currentSection === 'about' }">Hakkımızda</a>
         <a href="#speakers" class="nav-link" @click.prevent="scrollToSection('speakers')" :class="{ active: currentSection === 'speakers' }">Konuşmacılar</a>
         <a href="#partners" class="nav-link" @click.prevent="scrollToSection('partners')" :class="{ active: currentSection === 'partners' }">Paydaşlar</a>
         <a href="#contact" class="nav-link" @click.prevent="scrollToSection('contact')" :class="{ active: currentSection === 'contact' }">İletişim</a>
       </div>
+
+      <!-- Mobile Burger Button (Keep for secondary menu/info) -->
       <div class="mobile-menu-btn" :class="{ active: isMobileMenuOpen }" @click="toggleMobileMenu">
         <span></span>
         <span></span>
         <span></span>
       </div>
     </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" :class="{ active: isMobileMenuOpen }">
+        <div class="drawer-links">
+            <a href="#home" class="drawer-link" @click.prevent="scrollToSection('home')">Ana Sayfa</a>
+            <a href="#about" class="drawer-link" @click.prevent="scrollToSection('about')">Hakkımızda</a>
+            <a href="#speakers" class="drawer-link" @click.prevent="scrollToSection('speakers')">Konuşmacılar</a>
+            <a href="#partners" class="drawer-link" @click.prevent="scrollToSection('partners')">Paydaşlar</a>
+            <a href="#contact" class="drawer-link" @click.prevent="scrollToSection('contact')">İletişim</a>
+        </div>
+    </div>
+  </nav>
+
+  <!-- Bottom Navigation for Mobile -->
+  <nav class="bottom-nav mobile-only">
+    <a href="#home" class="bottom-nav-link" @click.prevent="scrollToSection('home')" :class="{ active: currentSection === 'home' }">
+      <i class="fas fa-home"></i>
+      <span>Ana Sayfa</span>
+    </a>
+    <a href="#about" class="bottom-nav-link" @click.prevent="scrollToSection('about')" :class="{ active: currentSection === 'about' }">
+      <i class="fas fa-info-circle"></i>
+      <span>Biz Kimiz?</span>
+    </a>
+    <a href="#speakers" class="bottom-nav-link" @click.prevent="scrollToSection('speakers')" :class="{ active: currentSection === 'speakers' }">
+      <i class="fas fa-microphone"></i>
+      <span>Konuşmacılar</span>
+    </a>
+    <a href="#partners" class="bottom-nav-link" @click.prevent="scrollToSection('partners')" :class="{ active: currentSection === 'partners' }">
+      <i class="fas fa-handshake"></i>
+      <span>Paydaşlar</span>
+    </a>
   </nav>
 
   <main class="main-content">
@@ -526,9 +561,115 @@ html {
   }
 
   #home {
-    margin-top: 0; /* Mobil görünümde margin-top sıfırla */
-    padding-top: 140px; /* Mobil navbar yüksekliğine göre üst boşluk eklendi */
+    margin-top: 0;
+    padding-top: 100px; /* Reduced for slim header */
   }
+
+  .nav-temp-logo {
+     max-height: 48px !important; /* Slimmer logo on mobile */
+  }
+
+  .mobile-only {
+    display: flex;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+}
+
+/* Bottom Navigation Styles */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+  border-top: 1px solid rgba(192, 38, 211, 0.1);
+  padding-bottom: env(safe-area-inset-bottom);
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.bottom-nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #666;
+  font-size: 0.75rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  flex: 1;
+  gap: 4px;
+}
+
+.bottom-nav-link i {
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+}
+
+.bottom-nav-link.active {
+  color: #c026d3;
+}
+
+.bottom-nav-link.active i {
+  transform: translateY(-4px);
+}
+
+/* Mobile Drawer Styles */
+.mobile-drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(192, 38, 211, 0.98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
+}
+
+.mobile-drawer.active {
+    transform: translateY(0);
+}
+
+.drawer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.drawer-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar .nav-temp-logo {
+    height: 60px;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 769px) {
+    .mobile-only {
+        display: none !important;
+    }
 }
 
 .footer {

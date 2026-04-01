@@ -6,7 +6,7 @@
         <canvas id="particleCanvas"></canvas>
       </div>
       <div class="container">
-        <img src="@/assets/herfest_logo.png" alt="HER'FEST" style="max-width: 400px; width: 100%; margin-bottom: 20px;" />
+        <img src="@/assets/herfest_logo.png" alt="HER'FEST" class="hero-logo desktop-only" style="max-width: 400px; width: 100%; margin-bottom: 20px;" />
         <p class="date">3 Nisan 2026 | FIRAT ÜNİVERSİTESİ</p>
         <div class="countdown">
           <div class="countdown-item">
@@ -721,7 +721,43 @@ h1::after {
   }
 
   .countdown {
+    margin-top: 20px;
+    padding: 20px;
     gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .countdown-item {
+    min-width: 0;
+    padding: 10px;
+  }
+
+  .countdown-item .number {
+    font-size: 2.2rem;
+  }
+
+  .countdown-item .label {
+    font-size: 0.7rem;
+    margin-top: 4px;
+  }
+
+  .hero-logo.desktop-only {
+    display: none;
+  }
+
+  .cta-section {
+    margin-top: 40px;
+  }
+
+  .cta-spacer {
+    display: none;
+  }
+
+  .home-page {
+    padding-bottom: 80px; /* Space for bottom nav */
   }
 }
 
