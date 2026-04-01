@@ -41,8 +41,8 @@
         </div>
 
         <div class="partner-card">
-          <img src="@/assets/elazig_etkinlik.png" alt="Elazığ Etkinlik Günleri" style="mix-blend-mode: multiply; transform: scale(1.1);" />
-          <h3>Elazığ Etkinlik Günleri</h3>
+          <img src="@/assets/serhat_dasbilek_yeni.png" alt="Serhat Daşbilek Organizasyon Etkinlik Günleri" style="mix-blend-mode: multiply; transform: scale(1.1);" />
+          <h3>Serhat Daşbilek Organizasyon Etkinlik Günleri</h3>
           <p>Bronz Sponsor</p>
         </div>
         <div class="partner-card">
