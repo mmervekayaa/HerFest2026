@@ -21,7 +21,7 @@
       </div>
 
       <h2 class="section-title supporters-title">DESTEKÇİLERİMİZ</h2>
-      <p class="section-subtitle">Etkinliğimize Katkı Sağlayan Değerli Destekçilerimiz</p>
+
       <div class="partners-grid supporters-grid">
         <div class="main-sponsor-card">
           <div class="special-badge">

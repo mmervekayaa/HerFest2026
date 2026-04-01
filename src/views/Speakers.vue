@@ -2,7 +2,7 @@
   <div class="speakers-page">
     <div class="container">
       <h2 class="section-title">KONUŞMACILAR</h2>
-      <p class="section-subtitle">Teknoloji ve İnovasyonun Öncü İsimleri</p>
+
       
       <div class="speakers-grid">
         <div v-for="(speaker, index) in speakers" :key="index" class="speaker-card">
