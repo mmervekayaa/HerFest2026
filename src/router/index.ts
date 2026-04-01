@@ -49,7 +49,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  document.title = to.meta.title ? `${to.meta.title} - Her Fest 2026` : 'Her Fest 2026'
+  document.title = to.meta.title ? `${to.meta.title} - HER'FEST 2026` : `HER'FEST 2026`
   next()
 })
 

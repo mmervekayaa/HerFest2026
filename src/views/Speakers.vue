@@ -77,7 +77,7 @@ export default {
         {
           name: 'Gözde Aydın',
           title: 'Core Logistics Platform Deputy General Manager',
-          image: require('@/assets/Gozde_Aydin.png'),
+          image: require('@/assets/gozde_aydin_yeni.jpg'),
           tags: ['Lojistik', 'Teknoloji', 'Liderlik'],
           bio: [
             'Core Logistics Platform Deputy General Manager olarak görev alan Gözde Aydın, teknoloji ve lojistik ekosistemindeki vizyoner tecrübelerini katılımcılarla paylaşacaktır.'

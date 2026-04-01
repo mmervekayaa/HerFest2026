@@ -6,7 +6,7 @@
         <canvas id="particleCanvas"></canvas>
       </div>
       <div class="container">
-        <h1>HER FEST 2026</h1>
+        <img src="@/assets/herfest_logo.png" alt="HER'FEST" style="max-width: 400px; width: 100%; margin-bottom: 20px;" />
         <p class="date">3 Nisan 2026 | FIRAT ÜNİVERSİTESİ</p>
         <div class="countdown">
           <div class="countdown-item">
@@ -40,12 +40,12 @@
 
     <section class="about-section">
       <div class="container">
-        <h2>HER FEST NEDİR?</h2>
+        <h2>HER'FEST NEDİR?</h2>
         <div class="about-content">
           <div class="about-text">
             <div class="about-card">
               <i class="fas fa-robot"></i>
-              <p>Her Fest, teknoloji, lojistik, akademi ve girişimcilik alanlarında çığır açan kadın liderleri bir araya getiren ilham verici bir zirvedir. Amacımız, kadınların iş dünyasındaki ve teknolojideki güçlü varlığını vurgulamak ve genç yeteneklere küresel bir vizyon kazandırmaktır.</p>
+              <p>HER'FEST, teknoloji, lojistik, akademi ve girişimcilik alanlarında çığır açan kadın liderleri bir araya getiren ilham verici bir zirvedir. Amacımız, kadınların iş dünyasındaki ve teknolojideki güçlü varlığını vurgulamak ve genç yeteneklere küresel bir vizyon kazandırmaktır.</p>
             </div>
             <div class="about-card">
               <i class="fas fa-users"></i>
@@ -234,7 +234,7 @@ export default {
   background: url('@/assets/womens_summit_bg.png') center/cover no-repeat;
   color: white;
   text-align: center;
-  padding: 200px 0;
+  padding: 280px 0 200px;
   margin-top: -80px;
   overflow: hidden;
 }

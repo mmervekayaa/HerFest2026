@@ -2,8 +2,8 @@
 <div class="app">
 <div class="page-transition" v-if="isLoading">
   <div class="loader">
-    <h1 class="logo-animation temp-logo" style="color: white; font-size: 3rem; margin-bottom: 20px;">HER FEST</h1>
-    <div class="loading-text">HER FEST 2026</div>
+    <img src="@/assets/herfest_logo.png" alt="HER'FEST" class="logo-animation temp-logo" style="max-width: 350px; margin-bottom: 20px;" />
+    <div class="loading-text" style="display: none;">HER'FEST 2026</div>
     <div class="loading-subtitle">BUGÜNÜN VİZYONU, YARININ TEKNOLOJİSİ</div>
   </div>
 </div>
@@ -12,7 +12,7 @@
     <div class="container">
       <div class="logo">
         <a href="#home" @click.prevent="scrollToSection('home')" style="text-decoration: none;">
-          <h2 class="nav-temp-logo" :style="{ color: isScrolled ? '#c026d3' : 'white', margin: 0, fontSize: '2.5rem', fontWeight: 'bold' }">HER FEST</h2>
+          <img src="@/assets/herfest_logo.png" alt="HER'FEST" class="nav-temp-logo" :style="{ filter: isScrolled ? 'none' : 'brightness(10)' }" style="max-height: 80px; margin: 0;" />
         </a>
       </div>
       <div class="nav-links" :class="{ active: isMobileMenuOpen }">
@@ -52,7 +52,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-logo">
-          <h2 class="footer-temp-logo" style="color: white; margin: 0; font-size: 2.5rem; font-weight: bold;">HER FEST</h2>
+          <img src="@/assets/herfest_logo.png" alt="HER'FEST" class="footer-temp-logo" style="max-height: 100px; margin: 0; filter: brightness(10);" />
         </div>
         <div class="footer-links">
           <h3>Hızlı Bağlantılar</h3>
@@ -67,7 +67,7 @@
         <div class="footer-cta">
           <div class="developer-info">
             <div class="developer-image-container">
-              <img src="@/assets/Merve_Kaya_nobg.png" alt="Merve Kaya" class="developer-image" />
+               <img src="@/assets/merve_yeni.jpg" alt="Merve Kaya" class="developer-image" />
             </div>
             <div class="developer-details">
               <div class="developer-title">Developer</div>
@@ -80,7 +80,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Her Fest. Tüm hakları saklıdır.</p>
+        <p>&copy; 2026 HER'FEST. Tüm hakları saklıdır.</p>
       </div>
     </div>
   </footer>
@@ -658,15 +658,13 @@ html {
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
-  object-position: center 80%;
-  object-fit: cover;
-  transform: scale(1.5);
+  /* Yeni fotoğraf için özel ayarlar kaldırıldı */
 }
 
 .developer-image:hover {
-  transform: scale(1.6);
+  transform: scale(1.1);
   border-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -710,7 +708,16 @@ html {
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.5px;
-  opacity: 0.9;
+  margin-right: -100%;
+}
+
+.her-fest-text {
+  font-family: 'Georgia', serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 0;
+  font-size: 2.8rem;
+  /* Görseldeki gibi hafif kalın ve oturaklı harfler */
 }
 
 @media (max-width: 768px) {
