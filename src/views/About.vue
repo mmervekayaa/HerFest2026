@@ -2,8 +2,7 @@
   <div class="about-page">
     <div class="hero-section">
       <div class="container">
-        <h1>HER FEST 2026</h1>
-        <p class="subtitle">Doğu Anadolu'nun Teknoloji ve İnovasyon Festivali</p>
+        <img src="@/assets/herfest_logo.png" alt="HER'FEST" style="max-height: 100px; margin-bottom: 20px; filter: brightness(10);" />
       </div>
     </div>
 
@@ -32,7 +31,7 @@
               <i class="fas fa-university"></i>
               <h3>Zirvemiz</h3>
             </div>
-            <p>Her Fest, ülkemizin teknoloji ve girişimcilik manzarasını şekillendiren en değerli kadın akademisyenleri, Global düzeydeki yöneticileri ve işletme liderlerini ağırlayan eşsiz bir vizyon buluşmasıdır. Amacımız, kadınların yarattığı gücü tüm sahada görünür kılmaktır.</p>
+            <p>HER'FEST, ülkemizin teknoloji ve girişimcilik manzarasını şekillendiren en değerli kadın akademisyenleri, Global düzeydeki yöneticileri ve işletme liderlerini ağırlayan eşsiz bir vizyon buluşmasıdır. Amacımız, kadınların yarattığı gücü tüm sahada görünür kılmaktır.</p>
           </div>
 
           <div class="about-card">
@@ -61,10 +60,7 @@
             <div class="stat-number">500+</div>
             <div class="stat-label">Katılımcı</div>
           </div>
-          <div class="stat-card">
-            <div class="stat-number">4</div>
-            <div class="stat-label">Oturum</div>
-          </div>
+
           <div class="stat-card">
             <div class="stat-number">1</div>
             <div class="stat-label">Gün</div>
